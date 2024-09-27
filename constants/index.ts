@@ -47,6 +47,8 @@ export const projects = [
         name: 'Notes App',
         description: 'Aplikasi catatan sederhana yang dibuat pakai MERN stack (MongoDB, Express.js, React.js, Node.js)',
         link: 'https://notes-app.nizaralghifary.my.id/',
+        download: 'NotesApp.apk',
+        code: "https://github.com/nizaralghifary/mern-notes-app",
     },
     {
         iconUrl: "/images/terminal.png",
@@ -59,11 +61,13 @@ export const projects = [
         name: 'Memoirix',
         description: 'Aplikasi catatan dengan banyak fitur dibuat dengan Next.js',
         link: 'https://memoirix.nizaralghifary.my.id/',
+        download: '/Memoirix.apk'
     },
     {
         iconUrl: "/images/quantummeet.svg",
         name: 'QuantumMeet',
         description: 'Aplikasi konferensi video seperti Zoom (Zoom Clone) dibuat dengan Next.js',
         link: 'https://meet.nizaralghifary.my.id/',
+        download: "/Meet.apk",
     },
 ]

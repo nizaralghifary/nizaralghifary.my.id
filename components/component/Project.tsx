@@ -45,12 +45,27 @@ export const Project = () => {
                   {project.name}
                 </h4>
                 <p className="mt-2 text-slate-500">{project.description}</p>
-                <div className="mt-5 flex items-center gap-2">
+                <div className="mt-5 flex flex-col items-center gap-2">
                   <Link href={project.link} passHref>
                     <span className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
                       Live Link
                     </span>
                   </Link>
+                  {/* Link Download APK */}
+                  {project.download && (
+                    <a href={project.download} download>
+                      <span className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
+                        Download APK
+                      </span>
+                    </a>
+                  )}
+                  {project.code && (
+                    <Link href={project.code} passHref>
+                      <span className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
+                        Source Code
+                      </span>
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
