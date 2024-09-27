@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Moon, Sun, Check } from "lucide-react"
+import { Moon, Sun, Laptop, Check } from "lucide-react"
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
@@ -29,21 +29,24 @@ export function ModeToggle() {
           onClick={() => setTheme("light")}
           className="flex items-center"
         >
-          <span className={theme === "light" ? "flex-grow" : "flex-grow"}>Light</span>
-          {theme === "light" && <Check className="ml-2 h-4 w-4" />} 
+          <Sun className="mr-2 h-4 w-4" />
+          <span className="flex-grow">Light</span>
+          {theme === "light" && <Check className="ml-2 h-4 w-4" />}
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => setTheme("dark")}
           className="flex items-center"
         >
-          <span className={theme === "dark" ? "flex-grow" : "flex-grow"}>Dark</span>
+          <Moon className="mr-2 h-4 w-4" />
+          <span className="flex-grow">Dark</span>
           {theme === "dark" && <Check className="ml-2 h-4 w-4" />}
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => setTheme("system")}
           className="flex items-center"
         >
-          <span className={theme === "system" ? "flex-grow" : "flex-grow"}>System</span>
+          <Laptop className="mr-2 h-4 w-4" />
+          <span className="flex-grow">System</span>
           {theme === "system" && <Check className="ml-2 h-4 w-4" />}
         </DropdownMenuItem>
       </DropdownMenuContent>
