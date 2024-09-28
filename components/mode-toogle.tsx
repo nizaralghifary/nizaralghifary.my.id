@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme() 
+  const { theme, setTheme } = useTheme()
 
   return (
     <DropdownMenu>
@@ -25,7 +25,7 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem 
+        <DropdownMenuItem
           onClick={() => setTheme("light")}
           className="flex items-center"
         >
@@ -33,7 +33,7 @@ export function ModeToggle() {
           <span className="flex-grow">Light</span>
           {theme === "light" && <Check className="ml-2 h-4 w-4" />}
         </DropdownMenuItem>
-        <DropdownMenuItem 
+        <DropdownMenuItem
           onClick={() => setTheme("dark")}
           className="flex items-center"
         >
@@ -41,7 +41,7 @@ export function ModeToggle() {
           <span className="flex-grow">Dark</span>
           {theme === "dark" && <Check className="ml-2 h-4 w-4" />}
         </DropdownMenuItem>
-        <DropdownMenuItem 
+        <DropdownMenuItem
           onClick={() => setTheme("system")}
           className="flex items-center"
         >

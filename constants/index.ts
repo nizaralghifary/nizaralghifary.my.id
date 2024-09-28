@@ -55,6 +55,7 @@ export const projects = [
         name: 'Terminal',
         description: 'Portfolio berbentuk terminal',
         link: 'https://terminal.nizaralghifary.my.id/',
+        code: 'https://github.com/nizaralghifary/terminal-portfolio',
     },
     {
         iconUrl: "/images/memoirix.svg",
@@ -64,7 +65,7 @@ export const projects = [
         download: '/Memoirix.apk'
     },
     {
-        iconUrl: "/images/quantummeet.svg",
+        iconUrl: "/images/Meet.png",
         name: 'QuantumMeet',
         description: 'Aplikasi konferensi video seperti Zoom (Zoom Clone) dibuat dengan Next.js',
         link: 'https://meet.nizaralghifary.my.id/',
