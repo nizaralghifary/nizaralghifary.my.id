@@ -47,7 +47,7 @@ export const projects = [
         name: 'Notes App',
         description: 'Aplikasi catatan sederhana yang dibuat pakai MERN stack (MongoDB, Express.js, React.js, Node.js)',
         link: 'https://notes-app.nizaralghifary.my.id/',
-        download: 'NotesApp.apk',
+        download: 'Notes.apk',
         code: "https://github.com/nizaralghifary/mern-notes-app",
     },
     {
