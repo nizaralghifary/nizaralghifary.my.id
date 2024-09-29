@@ -3,6 +3,7 @@ import Image from "next/image"
 
 import { Project } from "@/components/component/Project"
 import { Contacts } from "@/components/component/Contacts"
+import { Donate } from "@/components/component/Donate"
 import { skills } from "@/constants/index"
 
 export const HomePage = () => {
@@ -41,6 +42,7 @@ export const HomePage = () => {
       <div>
         <Project/>
         <Contacts/>
+        <Donate/>
       </div>
     </div>
   )
