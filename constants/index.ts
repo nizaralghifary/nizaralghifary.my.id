@@ -65,7 +65,7 @@ export const projects = [
         download: '/Memoirix.apk'
     },
     {
-        iconUrl: "/images/Meet.png",
+        iconUrl: "/images/MeetLogo.png",
         name: 'QuantumMeet',
         description: 'Aplikasi konferensi video seperti Zoom (Zoom Clone) dibuat dengan Next.js',
         link: 'https://meet.nizaralghifary.my.id/',
