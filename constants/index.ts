@@ -69,6 +69,6 @@ export const projects = [
         name: 'QuantumMeet',
         description: 'Aplikasi konferensi video seperti Zoom (Zoom Clone) dibuat dengan Next.js',
         link: 'https://meet.nizaralghifary.my.id/',
-        download: "/Meet.apk",
+        download: "/QuantumMeet.apk",
     },
 ]
