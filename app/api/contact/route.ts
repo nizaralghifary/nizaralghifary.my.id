@@ -15,7 +15,7 @@ async function connectToDatabase() {
     return cachedClient
   }
 
-  const client = new MongoClient(uri, { useUnifiedTopology: true, maxPoolSize: 10 })
+  const client = new MongoClient(uri, { maxPoolSize: 10 });
   await client.connect()
   cachedClient = client
   return client
