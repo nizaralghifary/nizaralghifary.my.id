@@ -15,7 +15,7 @@ async function connectToDatabase() {
     return cachedClient
   }
 
-  const client = new MongoClient(uri)
+  const client = new MongoClient(uri, { useUnifiedTopology: true, maxPoolSize: 10 })
   await client.connect()
   cachedClient = client
   return client
@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
 
     await collection.insertOne({ name, message, createdAt: new Date() })
 
-    return NextResponse.json({ message: 'Message received!' }, { status: 200 })
+    return NextResponse.json({ message: 'Message received!' })
   } catch (error) {
     console.error(error)
     return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 })
