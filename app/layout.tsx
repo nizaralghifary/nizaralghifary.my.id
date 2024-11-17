@@ -11,8 +11,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Nizar Alghifary',
-  description: 'Hi, I am Nizar Alghifary, a web developer from Indonesia',
+  title: "Nizar Alghifary",
+  description: "Hi, I am Nizar Alghifary, a web developer from Indonesia",
   icons: {
     icon: "/Nizar.svg",
   },
@@ -31,6 +31,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
+          storageKey="nizar-theme"
         >
           {children}
           <Analytics />
