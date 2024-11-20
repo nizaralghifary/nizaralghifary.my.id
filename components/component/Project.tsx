@@ -29,7 +29,7 @@ export const Project = () => {
                   alt={project.name}
                   width={40}
                   height={40}
-                  className="w-1/2 h-1/2 select-auto pointer-events-none"
+                  className="w-1/2 h-1/2 select-none pointer-events-none"
                 />
               </div>
             </div>
