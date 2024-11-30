@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import SplashScreen from "@/components/splash-screen";
 
@@ -50,6 +51,7 @@ export default function RootLayout({
         >
           <SplashScreen>
             {children}
+            <Analytics />
           </SplashScreen>
         </ThemeProvider>
       </body>
