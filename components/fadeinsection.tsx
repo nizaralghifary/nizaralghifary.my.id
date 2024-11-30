@@ -1,14 +1,11 @@
-"use client";
-
-import { motion } from "motion/react";
-import { useInViewAnimation } from "@/hooks/useInViewAnimation";
+import { motion, Variants } from "framer-motion";
 
 export const FadeInSection = ({
   children,
   animation,
 }: {
   children: React.ReactNode;
-  animation?: any;
+  animation?: Variants;
 }) => {
   const { ref, isInView } = useInViewAnimation();
 
