@@ -1,4 +1,5 @@
-import { motion, Variants } from "framer-motion";
+import { motion, Variants } from "motion/react";
+import { useInViewAnimation } from "@/hooks/useInViewAnimation";
 
 export const FadeInSection = ({
   children,
