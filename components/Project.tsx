@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeInSection } from "./fadeinsection";
+import { GradientText } from "./gradient-text";
 import { projects } from "@/constants/index";
 
 export const Project = () => {
@@ -11,9 +12,7 @@ export const Project = () => {
       <FadeInSection>
         <h1 className="sm:text-4xl text-3xl font-semibold sm:leading-snug text-center">
           My{" "}
-          <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent drop-shadow font-semibold inline-block">
-            Projects
-          </span>
+          <GradientText>Projects</GradientText>
         </h1>
         <p className="text-slate-500 mt-2 leading-relaxed text-center">
           Baru sedikit projeknya
@@ -40,23 +39,27 @@ export const Project = () => {
                 <h4 className="text-xl font-semibold">{project.name}</h4>
                 <p className="mt-2 text-slate-500">{project.description}</p>
                 <div className="mt-5 flex flex-col items-center gap-2">
-                  <Link href={project.link} passHref>
-                    <span className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
-                      Live Link
-                    </span>
-                  </Link>
+                  {project.link && (
+                    <Link href={project.link} passHref legacyBehavior>
+                      <a className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
+                        Live Link
+                      </a>
+                    </Link>
+                  )}
                   {project.download && (
-                    <a href={project.download} download>
-                      <span className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
-                        Download APK
-                      </span>
+                    <a 
+                      href={project.download} 
+                      download 
+                      className="font-semibold text-black-500 cursor-pointer hover:text-blue-500"
+                    >
+                      Download APK
                     </a>
                   )}
                   {project.code && (
-                    <Link href={project.code} passHref>
-                      <span className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
+                    <Link href={project.code} passHref legacyBehavior>
+                      <a className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
                         Source Code
-                      </span>
+                      </a>
                     </Link>
                   )}
                 </div>
