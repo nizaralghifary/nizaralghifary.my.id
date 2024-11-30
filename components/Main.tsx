@@ -9,12 +9,12 @@ import { skills } from "@/constants/index";
 
 export const Main = () => {
   return (
-    <div className="max-w-5xl mx-auto sm:p-16 pb-12 !pt-[40px] px-8 min-h-[calc(100vh-80px)]">
+    <div suppressHydrationWarning className="max-w-5xl mx-auto sm:p-16 pb-12 !pt-[40px] px-8 min-h-[calc(100vh-80px)]">
       <FadeInSection>
         <h4 className="sm:text-4xl text-3xl font-medium sm:leading-snug">
-          Hi, I&apos;m
-          <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent font-semibold drop-shadow">
-            {" "} Nizar Putra Alghifary
+          Hi, I&apos;m {" "} 
+          <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent font-semibold drop-shadow inline-block">
+            Nizar Putra Alghifary
           </span>
         </h4>
       </FadeInSection>

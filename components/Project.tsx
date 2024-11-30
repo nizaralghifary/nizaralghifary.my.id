@@ -11,7 +11,7 @@ export const Project = () => {
       <FadeInSection>
         <h1 className="sm:text-4xl text-3xl font-semibold sm:leading-snug text-center">
           My{" "}
-          <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent drop-shadow font-semibold">
+          <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent drop-shadow font-semibold inline-block">
             Projects
           </span>
         </h1>
