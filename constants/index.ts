@@ -78,6 +78,6 @@ export const projects = [
     image: neura,
     name: "Neura",
     description: "Platform Generative AI & Image Generator dibuat dengan Next.js",
-    link: "https://neura.nizaralghifary.my.id/",
+    link: "https://neura.nizaralghifary.my.id/"
   },
 ];
