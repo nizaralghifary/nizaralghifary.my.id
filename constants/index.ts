@@ -68,13 +68,6 @@ export const projects = [
     download: "/downloads/Memoirix.apk",
   },
   {
-    image: meet,
-    name: "Quantum Meet",
-    description: "Aplikasi konferensi video seperti Zoom (Zoom Clone) dibuat dengan Next.js",
-    link: "https://meet.nizaralghifary.my.id/",
-    download: "/downloads/QuantumMeet.apk",
-  },
-  {
     image: neura,
     name: "Neura",
     description: "Platform Generative AI & Image Generator dibuat dengan Next.js",
