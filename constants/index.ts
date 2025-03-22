@@ -1,5 +1,5 @@
 import { HTML, CSS, JS, TS, PY, NodeJS, ReactJS, TailwindCSS } from "@/assets/icons/index";
-import { mern, terminal, memoirix, meet, neura } from "@/assets/images/index";
+import { mern, terminal, memoirix, neura } from "@/assets/images/index";
 
 export const skills = [
   {
