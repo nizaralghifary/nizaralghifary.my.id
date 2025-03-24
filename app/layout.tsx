@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     ],
     locale: "id",
     type: "website",
+    other: {
+      "google-adsense-account": "ca-pub-2319020819990035"
+    }
   },
 };
 
