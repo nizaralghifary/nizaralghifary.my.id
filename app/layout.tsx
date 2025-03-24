@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     ],
     locale: "id",
     type: "website",
-    other: {
-      "google-adsense-account": "ca-pub-2319020819990035"
-    }
   },
+  other: {
+    "google-adsense-account": "ca-pub-2319020819990035"
+  }
 };
 
 export default function RootLayout({
