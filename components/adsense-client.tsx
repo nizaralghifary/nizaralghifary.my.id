@@ -1,6 +1,12 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
+declare global {
+  interface Window {
+    adsbygoogle?: any;
+  }
+}
+
 export default function AdSense() {
   const adRef = useRef(null);
   const [adsLoaded, setAdsLoaded] = useState(false);
