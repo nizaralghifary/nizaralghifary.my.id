@@ -5,6 +5,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import SplashScreen from "@/components/splash-screen";
+import Adsense from "@/components/adsense-client";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Nizar Alghifary",
-    description: "Web developer from Indonesia",
+    description: "A Web Developer from Indonesia",
     url: "https://www.nizaralghifary.my.id",
     siteName: "Nizar Alghifary Portfolio",
     images: [
@@ -33,17 +34,6 @@ export const metadata: Metadata = {
     locale: "id",
     type: "website",
   },
-  other: {
-    script: `
-      <script 
-        async 
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319020819990035"
-        crossorigin="anonymous"
-      >
-     </script>
-    `,
-    "google-adsense-account": "ca-pub-2319020819990035"
-  }
 };
 
 export default function RootLayout({
@@ -54,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
+        <Adsense />
         <ThemeProvider 
           attribute="class" 
           defaultTheme="system" 
