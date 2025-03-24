@@ -5,8 +5,8 @@ export default function AdSense() {
   return (
     <Script
       async
-      id=google-adsense
-      strategy=afterInteractive
+      id="google-adsense"
+      strategy="afterInteractive"
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319020819990035"
       crossOrigin="anonymous"
     />
