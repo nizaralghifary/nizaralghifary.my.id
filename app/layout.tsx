@@ -5,7 +5,6 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import SplashScreen from "@/components/splash-screen";
-import Adsense from "@/components/adsense-client";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,7 +43,6 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
-        <Adsense />
         <ThemeProvider 
           attribute="class" 
           defaultTheme="system" 
