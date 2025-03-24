@@ -34,6 +34,14 @@ export const metadata: Metadata = {
     type: "website",
   },
   other: {
+    script: `
+      <script 
+        async 
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319020819990035"
+        crossorigin="anonymous"
+      >
+     </script>
+    `,
     "google-adsense-account": "ca-pub-2319020819990035"
   }
 };
