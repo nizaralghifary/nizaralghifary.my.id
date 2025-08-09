@@ -46,15 +46,6 @@ export const Project = () => {
                       </a>
                     </Link>
                   )}
-                  {project.download && (
-                    <a 
-                      href={project.download} 
-                      download 
-                      className="font-semibold text-black-500 cursor-pointer hover:text-blue-500"
-                    >
-                      Download APK
-                    </a>
-                  )}
                   {project.code && (
                     <Link href={project.code} passHref legacyBehavior>
                       <a className="font-semibold text-black-500 cursor-pointer hover:text-blue-500">
